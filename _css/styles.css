@@ -35,7 +35,8 @@ nav {
   width: calc(100% - 1rem);
   bottom: 0px;
   background-color: black;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 
@@ -48,6 +49,13 @@ span, label {
   padding: 10px;
   font-size: 20px;
   background-color: rgb(40, 40, 40);
+  border-radius: 5px;
+  display: flex; 
+  align-items: center;
+}
+
+span {
+  background-color: midnightblue;
 }
 
 label {
@@ -55,10 +63,23 @@ label {
   text-align: center;
 }
 
+.fa-solid {
+  margin-right: 10px;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+section {
+  display: none;
+}
+
 label:hover {
   background-color: rgb(19, 19, 19);
 }
 
-/* input[type="radio"] {
-  visibility: hidden;
-} */
+#dashboard:checked + .dashboard {
+  display: block;
+}

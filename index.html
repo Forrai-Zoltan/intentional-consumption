@@ -7,39 +7,70 @@
   <!-- For some reason on github pages iframes behave weirdly. This two links both link tot the same css file, but the one on top is only recognised by the actual site, and the one in the bottom is only recognised by the iframe. Otherwise they give error 404. So don't delete either of these links. They are both needed for css! -->
   <link rel="stylesheet" href="intentional-consumption/_css/styles.css">
   <link rel="stylesheet" href="_css/styles.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
   <header>
     <nav>
-      <span><a href="/collections/intentional_consumption.html">Take me Home</a></span>
-      <label for="dashboard">⚙️ Dashboard</label>
-      <label for="movies">🍿 Movies</label>
-      <label for="series">📺 Series</label>
-      <label for="plays">🎭 Plays</label>
-      <label for="animation">🎨 Animation</label>
+      <span><a href="/collections/intentional_consumption.html"><i class="fa-solid fa-house"></i></a></span>
+      <label for="dashboard"><i class="fa-solid fa-gear"></i> Dashboard</label>
+      <label for="movies"><i class="fa-solid fa-film"></i> Movies</label>
+      <label for="series"><i class="fa-solid fa-tv"></i> Series</label>
+      <label for="plays"><i class="fa-solid fa-masks-theater"></i> Plays</label>
+      <label for="animation"><i class="fa-solid fa-palette"></i> Animation</label>
       <label for="anime">🍡 Anime</label>
-      <label for="fiction">📘 Fiction</label>
+      <label for="fiction"><i class="fa-solid fa-book"></i> Fiction</label>
       <label for="non-fiction">📚 Non-Fiction</label>
-      <label for="poetry">📝 Poetry</label>
-      <label for="comic_books">💥 Comic Books</label>
-      <label for="manga">🥷🏻 Manga</label>
+      <label for="poetry"><i class="fa-solid fa-quote-right"></i> Poetry</label>
+      <label for="comic_books"><i class="fa-regular fa-comment-dots"></i> Comic Books</label>
+      <label for="manga"><i class="fa-solid fa-user-ninja"></i> Manga</label>
       <label for="video_games">🎮 Video Games</label>
       <label for="music">🎸 Music</label>
     </nav>
   </header>
-  <!-- Body -->
-  <input name="display" type="radio" id="dashboard">
-  <input name="display" type="radio" id="movies">
-  <input name="display" type="radio" id="series">
-  <input name="display" type="radio" id="plays">
-  <input name="display" type="radio" id="animation">
-  <input name="display" type="radio" id="anime">
-  <input name="display" type="radio" id="fiction">
-  <input name="display" type="radio" id="non-fiction">
-  <input name="display" type="radio" id="poetry">
-  <input name="display" type="radio" id="comic_books">
-  <input name="display" type="radio" id="manga">
-  <input name="display" type="radio" id="video_games">
-  <input name="display" type="radio" id="music">
+  <!-- Body Proper -->
+  <div>
+    <input name="display" type="radio" id="dashboard">
+    <section class="dashboard">
+      <p>asd</p>
+    </section>
+  </div>
+  <div>
+    <input name="display" type="radio" id="movies">
+  </div>
+  <div>
+    <input name="display" type="radio" id="series">
+  </div>
+  <div>
+    <input name="display" type="radio" id="plays">
+  </div>
+  <div>
+    <input name="display" type="radio" id="animation">
+  </div>
+  <div>
+    <input name="display" type="radio" id="anime">
+  </div>
+  <div>
+    <input name="display" type="radio" id="fiction">
+  </div>
+  <div>
+    <input name="display" type="radio" id="non-fiction">
+  </div>
+  <div>
+    <input name="display" type="radio" id="poetry">
+  </div>
+  <div>
+    <input name="display" type="radio" id="comic_books">
+  </div>
+  <div>
+    <input name="display" type="radio" id="manga">
+  </div>
+  <div>
+    <input name="display" type="radio" id="video_games">
+  </div>
+  <div>
+    <input name="display" type="radio" id="music">
+  </div>
 </body>
 </html>
