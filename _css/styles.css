@@ -1,9 +1,17 @@
-/* FOR THE INTENTIONA CONSUMPTION PAGE */
+@media (prefers-color-scheme: light) {
 
-body {
-  background-color: black;
+  body {
+    background-color: white;
+    color: black
+  }
+  
 }
 
-p {
-  color: red;
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: black;
+    color: white
+  }
+
 }
