@@ -16,8 +16,36 @@
 
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: green transparent;  
+}
 
 nav {
   display: flex;
-  justify-content: space-evenly;
+  overflow-x: auto;
+  overflow: visible;
+  position: fixed;
+  z-index: 9999;
+  width: calc(100% - 1rem);
+  bottom: 0px;
+}
+
+
+span, label {
+  border: 1px solid black;
+  border-bottom: none;
+  width: 100px;
+  min-width: fit-content;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(33, 33, 33);
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  transform: translateY(-5px);
 }
