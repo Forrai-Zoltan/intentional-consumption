@@ -10,19 +10,11 @@
 @media (prefers-color-scheme: dark) {
 
   body {
-    color: white
-  }
-
-} 
-
-/* @media (prefers-color-scheme: dark) {
-
-  body {
     background-color: black;
     color: white
   }
 
-} */
+} 
 
 * {
   scrollbar-width: thin;
@@ -49,7 +41,6 @@ nav {
   border-top-right-radius: 20px;
 }
 
-
 span, label {
   margin: 1px;
   border-bottom: none;
@@ -61,16 +52,14 @@ span, label {
   border-radius: 5px;
   display: flex; 
   align-items: center;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
 }
 
 span {
   background-color: midnightblue;
   max-width: fit-content;
-}
-
-span, label {
-  cursor: pointer;
-  text-align: center;
 }
 
 span .fa-solid {
@@ -143,7 +132,9 @@ section {
   display: block;
 }
 
-/* TABLE */
+/* TABLE
+/////////////////////////////////////////////////////////////////////////
+*/
 
 .flex-table {
   display: flex;
@@ -211,3 +202,9 @@ h2 {
 p {
   margin: 20px;
 }
+
+::selection {
+  background-color: #124a14;; 
+  color: #39ff14;; 
+}
+
