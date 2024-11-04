@@ -242,3 +242,7 @@ summary {
   cursor: pointer;
   user-select: none;
 }
+
+details p {
+  margin: 10px 0px 0px 23px;
+}
