@@ -60,9 +60,9 @@ span, label {
   background-color: rgb(40, 40, 40);
   border-radius: 5px;
   display: flex; 
-  align-items: center;
+  align-items:baseline;
   cursor: pointer;
-  text-align: center;
+  text-align:leftw;
   user-select: none;
 }
 
