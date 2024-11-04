@@ -138,23 +138,32 @@ section {
 }
 
 table {
-  background-color: rgb(40, 40, 40);
-  border: 1px solid black;
+  background-color: rgb(150, 150, 150);
   border-collapse: collapse;
   margin: 0 20px 0 20px;
   border-radius: 20px 20px 10px 10px;
-  
   width: 100%;
+  color: black;
+  overflow: hidden;
 }
 
 thead {
   font-weight: bold;
+  border-bottom: 5px solid black;
+}
+
+tbody {
+
+}
+
+tbody tr:nth-last-of-type(even) {
+  background-color: rgb(180, 180, 180);
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 5px 20px;
-  min-width: 100px;
+  min-width: fit-content;
   
 }
 
@@ -163,11 +172,13 @@ th {
 }
 
 td {
-
+  
 }
 
-td:hover {
-  background-color: rgb(19, 19, 19);
+tbody tr:hover {
+  color: #39ff14;
+  background-color: #124a14;
+
 }
 
 
