@@ -21,6 +21,10 @@
   scrollbar-color: green transparent;  
 }
 
+html {
+  font-size: 20px;
+}
+
 a {
   color: white;
 }
@@ -45,7 +49,6 @@ span, label {
   width: 100%;
   height: 20px;
   padding: 10px;
-  font-size: 20px;
   background-color: rgb(40, 40, 40);
   border-radius: 5px;
   display: flex; 
@@ -128,7 +131,49 @@ section {
   display: block;
 }
 
+/* TABLE */
+
+.flex-table {
+  display: flex;
+}
+
 table {
   background-color: rgb(40, 40, 40);
   border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 20px 0 20px;
+  border-radius: 20px 20px 10px 10px;
+  
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px 20px;
+  min-width: 100px;
+  
+}
+
+th {
+  font-size: 25px;
+}
+
+td {
+
+}
+
+td:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+
+/* TEXT */
+
+h1, h2 {
+  font-size: 40px;
+  margin: 20px;
 }
