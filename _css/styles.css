@@ -25,8 +25,6 @@ a {
   color: white;
 }
 
-
-
 nav {
   display: flex;
   overflow: auto;
@@ -77,9 +75,6 @@ input[type="radio"] {
   display: none;
 }
 
-section {
-  display: none;
-}
 
 label:hover {
   background-color: rgb(19, 19, 19);
@@ -89,11 +84,51 @@ span:hover {
   background-color: green;
 }
 
+section {
+  display: none;
+}
+
 #dashboard:checked + .dashboard {
   display: block;
 }
-
-#dashboard:checked #dashboard-label {
-  background-color: rgb(150, 12, 12);
+#movies:checked + .movies {
+  display: block;
+}
+#series:checked + .series {
+  display: block;
+}
+#plays:checked + .plays {
+  display: block;
+}
+#animation:checked + .animation {
+  display: block;
+}
+#anime:checked + .anime {
+  display: block;
+}
+#fiction:checked + .fiction {
+  display: block;
+}
+#non-fiction:checked + .non-fiction {
+  display: block;
+}
+#poetry:checked + .poetry {
+  display: block;
+}
+#comic_books:checked + .comic_books {
+  display: block;
+}
+#manga:checked + .manga {
+  display: block;
+}
+#video_games:checked + .video_games {
+  display: block;
+}
+#music:checked + .music {
+  display: block;
 }
 
+table {
+  background-color: rgb(40, 40, 40);
+  border: 1px solid black;
+}
