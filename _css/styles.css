@@ -168,7 +168,7 @@ tbody {
 
 }
 
-tbody tr:nth-last-of-type(even) {
+tbody tr:nth-last-of-type(2n) {
   background-color: rgb(180, 180, 180);
 }
 
@@ -207,9 +207,20 @@ h2 {
   font-size: 40px;
 }
 
+em {
+  color: orange;
+}
 
 ::selection {
   background-color: #124a14;; 
   color: #39ff14;; 
 }
 
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  accent-color: #4caf50;
+}
+.uncheckable {
+  pointer-events: none;
+}
