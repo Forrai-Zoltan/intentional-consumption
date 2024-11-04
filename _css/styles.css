@@ -140,6 +140,9 @@ section {
 #music:checked + .music {
   display: block;
 }
+#art:checked + .art {
+  display: block;
+}
 
 /* TABLE
 /////////////////////////////////////////////////////////////////////////
