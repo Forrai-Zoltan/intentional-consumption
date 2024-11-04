@@ -25,6 +25,10 @@ html {
   font-size: 20px;
 }
 
+body:not(header) {
+s
+}
+
 a {
   color: white;
 }
@@ -191,17 +195,13 @@ tbody tr:hover {
 
 h1 {
   font-size: 50px;
-  margin: 20px;
+  margin-top: 0px;
 }
 
 h2 {
   font-size: 40px;
-  margin: 20px;
 }
 
-p {
-  margin: 20px;
-}
 
 ::selection {
   background-color: #124a14;; 
