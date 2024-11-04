@@ -56,11 +56,16 @@ span, label {
 
 span {
   background-color: midnightblue;
+  max-width: fit-content;
 }
 
-label {
+span, label {
   cursor: pointer;
   text-align: center;
+}
+
+span .fa-solid {
+  margin-right: 0px;
 }
 
 .fa-solid {
@@ -80,6 +85,15 @@ label:hover {
   background-color: rgb(19, 19, 19);
 }
 
+span:hover {
+  background-color: green;
+}
+
 #dashboard:checked + .dashboard {
   display: block;
 }
+
+#dashboard:checked #dashboard-label {
+  background-color: rgb(150, 12, 12);
+}
+
