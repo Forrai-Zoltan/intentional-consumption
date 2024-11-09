@@ -1,29 +1,25 @@
 @media (prefers-color-scheme: light) {
-
   body {
     background-color: white;
   }
   .body {
-    color: black
+    color: black;
   }
   header {
-    color: white
+    color: white;
   }
-  
 }
 
 @media (prefers-color-scheme: dark) {
-
   body {
     background-color: black;
-    color: white
+    color: white;
   }
-
-} 
+}
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: green transparent;  
+  scrollbar-color: green transparent;
 }
 
 html {
@@ -46,11 +42,12 @@ nav {
   width: calc(100% - 1rem);
   bottom: 0px;
   background-color: black;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-span, label {
+span,
+label {
   margin: 1px;
   border-bottom: none;
   min-width: fit-content;
@@ -59,10 +56,10 @@ span, label {
   padding: 10px;
   background-color: rgb(40, 40, 40);
   border-radius: 5px;
-  display: flex; 
-  align-items:baseline;
+  display: flex;
+  align-items: baseline;
   cursor: pointer;
-  text-align:leftw;
+  text-align: leftw;
   user-select: none;
 }
 
@@ -83,15 +80,12 @@ h1 .fa-solid {
   margin-right: 20px;
 }
 
-
 input[type="radio"] {
   display: none;
 }
 
-
 label:hover {
   background-color: rgb(19, 19, 19);
-
 }
 
 span:hover {
@@ -149,9 +143,7 @@ section {
 /////////////////////////////////////////////////////////////////////////
 */
 
-
 .flex-table {
-
   table {
     background-color: rgb(150, 150, 150);
     border-collapse: collapse;
@@ -171,7 +163,8 @@ section {
     background-color: rgb(180, 180, 180);
   }
 
-  th, td {
+  th,
+  td {
     text-align: left;
     padding: 5px 20px;
     min-width: fit-content;
@@ -186,7 +179,7 @@ section {
 
   tbody tr:hover {
     color: #39ff14;
-    background-color: #124a14;  
+    background-color: #124a14;
   }
 }
 
@@ -196,8 +189,9 @@ section {
 
 .dash-table {
   margin: 5px;
-    
-  th, td {
+
+  th,
+  td {
     padding: 10px 10px 10px 10px;
     font-size: 25px;
   }
@@ -225,8 +219,8 @@ em {
 }
 
 ::selection {
-  background-color: #124a14;; 
-  color: #39ff14;; 
+  background-color: #124a14;
+  color: #39ff14;
 }
 
 input[type="checkbox"] {
@@ -240,7 +234,6 @@ input[type="checkbox"] {
 
 h3 {
   margin: 0 0 10px 0;
-
 }
 
 p {
@@ -248,7 +241,7 @@ p {
   font-size: 20px;
   line-height: 1.75;
   text-align: left;
-  hyphens: auto; 
+  hyphens: auto;
   overflow-wrap: break-word;
   margin: 10px 0 0 0;
 }
