@@ -26,6 +26,10 @@ html {
   font-size: 20px;
 }
 
+body {
+  background-image: url("/_assets/images/nnnoise.svg");
+}
+
 .body {
   margin: 20px;
 }
