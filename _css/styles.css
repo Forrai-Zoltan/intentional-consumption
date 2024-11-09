@@ -42,8 +42,13 @@ nav {
   width: calc(100% - 1rem);
   bottom: 0px;
   background-color: black;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+nav::-webkit-scrollbar {
+  display: none;
 }
 
 span,
