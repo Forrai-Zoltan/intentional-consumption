@@ -148,51 +148,6 @@ section {
   display: block;
 }
 
-/* TABLE
-/////////////////////////////////////////////////////////////////////////
-*/
-
-.flex-table {
-  table {
-    background-color: rgb(150, 150, 150);
-    border-collapse: collapse;
-    margin: 20px 0px 50px 0px;
-    border-radius: 20px 20px 10px 10px;
-    width: 100%;
-    color: black;
-    overflow: hidden;
-  }
-
-  thead {
-    font-weight: bold;
-    border-bottom: 5px solid black;
-    padd
-  }
-
-  tbody tr:nth-last-of-type(2n) {
-    background-color: rgb(180, 180, 180);
-  }
-
-  th,
-  td {
-    text-align: left;
-    padding: 5px 20px;
-    min-width: fit-content;
-    white-space: normal;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  th {
-    font-size: 25px;
-  }
-
-  tbody tr:hover {
-    color: #39ff14;
-    background-color: #124a14;
-  }
-}
-
 .dashboard {
   margin-bottom: 70px;
 }
@@ -212,6 +167,7 @@ section {
   }
 }
 
+/* ///////////////////// */
 /* TEXT */
 
 h1 {
@@ -280,3 +236,42 @@ p {
     margin: 20px 0 0 0;
   }
 }
+
+/* TABLE
+/////////////////////////////////////////////////////////////////////////
+*/
+
+.flex-table {
+  margin-top: 20px;
+  padding: 0;
+}
+table {
+  border-radius: 20px 20px 10px 10px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: grey;
+}
+
+thead {
+  border-bottom: 4px solid black;
+}
+
+tbody {
+  td + td {
+    border-left: 2px solid rgb(194, 194, 194);
+  }
+}
+
+th {
+  font-size: 40px;
+}
+
+td {
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid black;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* //////////////////// */

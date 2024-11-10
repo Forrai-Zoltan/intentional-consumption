@@ -58,7 +58,7 @@
     <!-- ⚙️ DASHBOARD -->
     <div class="body">
       <div>
-        <input name="display" type="radio" id="dashboard" checked />
+        <input name="display" type="radio" id="dashboard" />
         <section class="dashboard">
           <div class="columns">
             <div class="flex-1">
@@ -140,20 +140,24 @@
       </div>
       <!-- 🍿 MOVIES -->
       <div>
-        <input name="display" type="radio" id="movies" />
+        <input name="display" type="radio" id="movies" checked />
         <section class="movies">
           <h1><i class="fa-solid fa-film"></i>Films</h1>
           <div class="flex-table">
             <table>
               <thead>
-                <th>Seen</th>
-                <th>Year</th>
-                <th>Title</th>
+                <tr>
+                  <th>Seen</th>
+                  <th>Year</th>
+                  <th>Title</th>
+                </tr>
               </thead>
               <tbody>
-                <td><input type="checkbox" /></td>
-                <td>2005</td>
-                <td>V for Vendetta</td>
+                <tr>
+                  <td><input type="checkbox" class="uncheckable" /></td>
+                  <td>2005</td>
+                  <td>V for Vendetta</td>
+                </tr>
               </tbody>
             </table>
           </div>
