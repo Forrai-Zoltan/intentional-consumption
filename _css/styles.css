@@ -48,6 +48,7 @@ nav {
   background-color: black;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top: 10px solid rgba(0, 0, 0, 0.5);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -242,36 +243,53 @@ p {
 */
 
 .flex-table {
-  margin-top: 20px;
-  padding: 0;
-}
-table {
-  border-radius: 20px 20px 10px 10px;
-  border-collapse: collapse;
-  width: 100%;
-  background-color: grey;
-}
-
-thead {
-  border-bottom: 4px solid black;
-}
-
-tbody {
-  td + td {
-    border-left: 2px solid rgb(194, 194, 194);
+  table {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 0;
+    border-radius: 20px 20px 10px 10px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(160, 160, 160);
+    overflow: hidden;
+    display: block-inline;
   }
-}
+  table th {
+    position: sticky;
+    top: 0;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(140, 140, 140);
+  }
 
-th {
-  font-size: 40px;
-}
+  thead {
+    border-bottom: 4px solid black;
+  }
 
-td {
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-bottom: 2px solid black;
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  tbody {
+    td + td {
+      border-left: 2px solid rgb(194, 194, 194);
+    }
+  }
+
+  th {
+    font-size: 40px;
+    background-color: orange;
+  }
+
+  td {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+  }
+
+  td:has(input[type="checkbox"]) {
+    text-align: center;
+  }
+
+  tr:has(input[type="checkbox"]:checked) {
+    background-color: green;
+  }
 }
 /* //////////////////// */
