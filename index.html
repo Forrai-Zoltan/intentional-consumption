@@ -1,248 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intentional Consumption</title>
-  <!-- For some reason on github pages iframes behave weirdly. This two links both link tot the same css file, but the one on top is only recognised by the actual site, and the one in the bottom is only recognised by the iframe. Otherwise they give error 404. So don't delete either of these links. They are both needed for css! -->
-  <link rel="stylesheet" href="intentional-consumption/_css/styles.css">
-  <link rel="stylesheet" href="_css/styles.css">
-  <!-- fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48"/>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-  <link rel="shortcut icon" href="/favicon.ico"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-  <link rel="manifest" href="/site.webmanifest"/>
-</head>
-<body>
-  <header>
-    <nav>
-      <span title="shrink">
-        <a href="/collections/intentional_consumption"><i class="fa-solid fa-minimize"></i></a>
-      </span>
-      <label for="dashboard"><i class="fa-solid fa-gear"></i> DB</label>
-      <label for="movies"><i class="fa-solid fa-film"></i> Films</label>
-      <label for="series"><i class="fa-solid fa-tv"></i> Shows</label>
-      <label for="plays"><i class="fa-solid fa-masks-theater"></i> Plays</label>
-      <label for="animation"><i class="fa-solid fa-paintbrush"></i> Toons</label>
-      <label for="anime"><i class="fa-solid fa-dragon"></i> Anime</label>
-      <label for="fiction"><i class="fa-solid fa-book"></i> Fiction</label>
-      <label for="non-fiction"><i class="fa-solid fa-book-open"></i> Non-Fict</label>
-      <label for="poetry"><i class="fa-solid fa-quote-right"></i> Poetry</label>
-      <label for="comic_books"><i class="fa-solid fa-comment-dots"></i> Comics</label>
-      <label for="manga"><i class="fa-solid fa-user-ninja"></i> Manga</label>
-      <label for="video_games"><i class="fa-solid fa-gamepad"></i> Games</label>
-      <label for="music"><i class="fa-solid fa-guitar"></i> Music</label>
-      <label for="art"><i class="fa-solid fa-palette"></i> Art</label>
-    </nav>
-  </header>
-  <!-- Body Proper -->
-  <!-- ⚙️ DASHBOARD -->
-  <div class="body">
-    <div>
-      <input name="display" type="radio" id="dashboard" checked>
-      <section class="dashboard">
-        <div class="columns">
-          <div class="flex-1">
-            <h1><i class="fa-solid fa-gear"></i>Dashboard</h1>
-            <p><em>We are all passersby, enjoy what this world has to offer, while you're still here.</em></p>
-            <p>This is where I keep track of all the media I read/watched and what I want to enjoy in the future.</p> 
-            <p>Got any recommendations?</p>
-            <h2>Currently Enjoying</h2>
-            <table class="dash-table">
-              <tr>
-                <th>Reading: </th>
-                <td>Kis Magyar retorika — Szörényi László, Szabó Zoltán</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Watching: </th>
-                <td>—</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Playing: </th>
-                <td>—</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Listening: </th>
-                <td>—</td>
-                <td></td>
-              </tr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intentional Consumption</title>
+    <!-- For some reason on github pages iframes behave weirdly. This two links both link tot the same css file, but the one on top is only recognised by the actual site, and the one in the bottom is only recognised by the iframe. Otherwise they give error 404. So don't delete either of these links. They are both needed for css! -->
+    <link rel="stylesheet" href="intentional-consumption/_css/styles.css" />
+    <link rel="stylesheet" href="_css/styles.css" />
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span title="shrink">
+          <a href="/collections/intentional_consumption"
+            ><i class="fa-solid fa-minimize"></i
+          ></a>
+        </span>
+        <label for="dashboard"><i class="fa-solid fa-gear"></i> DB</label>
+        <label for="movies"><i class="fa-solid fa-film"></i> Films</label>
+        <label for="series"><i class="fa-solid fa-tv"></i> Shows</label>
+        <label for="plays"
+          ><i class="fa-solid fa-masks-theater"></i> Plays</label
+        >
+        <label for="animation"
+          ><i class="fa-solid fa-paintbrush"></i> Toons</label
+        >
+        <label for="anime"><i class="fa-solid fa-dragon"></i> Anime</label>
+        <label for="fiction"><i class="fa-solid fa-book"></i> Fiction</label>
+        <label for="non-fiction"
+          ><i class="fa-solid fa-book-open"></i> Non-Fict</label
+        >
+        <label for="poetry"
+          ><i class="fa-solid fa-quote-right"></i> Poetry</label
+        >
+        <label for="comic_books"
+          ><i class="fa-solid fa-comment-dots"></i> Comics</label
+        >
+        <label for="manga"><i class="fa-solid fa-user-ninja"></i> Manga</label>
+        <label for="video_games"
+          ><i class="fa-solid fa-gamepad"></i> Games</label
+        >
+        <label for="music"><i class="fa-solid fa-guitar"></i> Music</label>
+        <label for="art"><i class="fa-solid fa-palette"></i> Art</label>
+      </nav>
+    </header>
+    <!-- Body Proper -->
+    <!-- ⚙️ DASHBOARD -->
+    <div class="body">
+      <div>
+        <input name="display" type="radio" id="dashboard" checked />
+        <section class="dashboard">
+          <div class="columns">
+            <div class="flex-1">
+              <h1><i class="fa-solid fa-gear"></i>Dashboard</h1>
+              <p>
+                <em
+                  >We are all passersby, enjoy what this world has to offer,
+                  while you're still here.</em
+                >
+              </p>
+              <p>
+                This is where I keep track of all the media I read/watched and
+                what I want to enjoy in the future.
+              </p>
+              <p>Got any recommendations?</p>
+              <h2>Currently Enjoying</h2>
+              <table class="dash-table">
+                <tr>
+                  <th>Reading:</th>
+                  <td>Kis Magyar retorika — Szörényi László, Szabó Zoltán</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Watching:</th>
+                  <td>—</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Playing:</th>
+                  <td>—</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Listening:</th>
+                  <td>—</td>
+                  <td></td>
+                </tr>
+              </table>
+              <hr />
+            </div>
+            <div class="flex-2">
+              <h3><b>What does Intentional Consumption mean?</b></h3>
+              <p>
+                I'm frustrated with modern culture. It makes it impossible for
+                me to enjoy anything.
+              </p>
+              <p>
+                Our fast-paced world is always looking for the next hit: the
+                next story, the next reel, the next big thing. We are
+                overconsuming the content that is out there; we are
+                overconsuming art and culture. And because of this, we are also
+                overproducing art and culture to match this need for
+                consumption. Masterpieces of art are replaced by low-quality
+                short-form “content.” Our modern culture values easily
+                consumable, mindless content that is literally rotting your
+                brain.
+              </p>
+              <p>
+                I've had enough of this! I don't want to doomscroll anymore. I
+                want to engage deeply with the art I consume; I want to think
+                about it and give it the proper brain bandwidth it deserves. I
+                want to enjoy the things I bring into my life.
+              </p>
+              <p>
+                The key to this, I believe is mindful consumption (with
+                intention). Take time with the material and don't jump for the
+                next thing immediately.
+              </p>
+              <p>
+                This is my list of high-quality content the world has to offer.
+                I wish to spend my time only engaging with the art listed here.
+                I invite you to join me in this. Get a book, read it slowly,
+                take your time to enjoy every word of it. Slow down with the
+                input. Enjoy what you consume again!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 🍿 MOVIES -->
+      <div>
+        <input name="display" type="radio" id="movies" />
+        <section class="movies">
+          <h1><i class="fa-solid fa-film"></i>Films</h1>
+          <div class="flex-table">
+            <table>
+              <thead>
+                <th>Seen</th>
+                <th>Year</th>
+                <th>Title</th>
+              </thead>
+              <tbody>
+                <td><input type="checkbox" /></td>
+                <td>2005</td>
+                <td>V for Vendetta</td>
+              </tbody>
             </table>
-            <hr>
           </div>
-          <div class="flex-2">
-            <h3><b>What does Intentional Consumption mean?</b></h3>
-            <p>I'm frustrated with modern culture. It makes it impossible for me to enjoy anything.</p>
-            <p>Our fast-paced world is always looking for the next hit: the next story, the next reel, the next big thing. We are overconsuming the content that is out there; we are overconsuming art and culture. And because of this, we are also overproducing art and culture to match this need for consumption. Masterpieces of art are replaced by low-quality short-form “content.” Our modern culture values easily consumable, mindless content that is literally rotting your brain.</p>
-            <p>I've had enough of this! I don't want to doomscroll anymore. I want to engage deeply with the art I consume; I want to think about it and give it the proper brain bandwidth it deserves. I want to enjoy the things I bring into my life. 
-              <p>The key to this, I believe is mindful consumption (with intention). Take time with the material and don't jump for the next thing immediately. </p>
-            <p>This is my list of high-quality content the world has to offer. I wish to spend my time only engaging with the art listed here. I invite you to join me in this. Get a book, read it slowly, take your time to enjoy every word of it. Slow down with the input. Enjoy what you consume again!</p>
+        </section>
+      </div>
+      <!-- 📺 SERIES -->
+      <div>
+        <input name="display" type="radio" id="series" />
+        <section class="series">
+          <h1><i class="fa-solid fa-tv"></i>Shows</h1>
+          <div class="flex-table">
+            <table></table>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <!-- 🎭 PLAYS -->
+      <div>
+        <input name="display" type="radio" id="plays" />
+        <section class="plays">
+          <h1><i class="fa-solid fa-masks-theater"></i>Plays</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 🎨 ANIMATION -->
+      <div>
+        <input name="display" type="radio" id="animation" />
+        <section class="animation">
+          <h1><i class="fa-solid fa-paintbrush"></i>Animation</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 🍡 ANIME -->
+      <div>
+        <input name="display" type="radio" id="anime" />
+        <section class="anime">
+          <h1><i class="fa-solid fa-dragon"></i>Anime</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 📘 FICTION -->
+      <div>
+        <input name="display" type="radio" id="fiction" />
+        <section class="fiction">
+          <h1><i class="fa-solid fa-book"></i>Fiction</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 📚 NON-FICTION -->
+      <div>
+        <input name="display" type="radio" id="non-fiction" />
+        <section class="non-fiction">
+          <h1><i class="fa-solid fa-book-open"></i>Non-Fiction</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 📝 POETRY -->
+      <div>
+        <input name="display" type="radio" id="poetry" />
+        <section class="poetry">
+          <h1><i class="fa-solid fa-quote-right"></i>Poetry</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 💥 COMIC BOOKS -->
+      <div>
+        <input name="display" type="radio" id="comic_books" />
+        <section class="comic_books">
+          <h1><i class="fa-solid fa-comment-dots"></i>Comic Books</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 🥷🏻 MANGA -->
+      <div>
+        <input name="display" type="radio" id="manga" />
+        <section class="manga">
+          <h1><i class="fa-solid fa-user-ninja"></i>Manga</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 🎮 VIDEO GAMES -->
+      <div>
+        <input name="display" type="radio" id="video_games" />
+        <section class="video_games">
+          <h1><i class="fa-solid fa-gamepad"></i>Video Games</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- 🎸 MUSIC -->
+      <div>
+        <input name="display" type="radio" id="music" />
+        <section class="music">
+          <h1><i class="fa-solid fa-guitar"></i>Music</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- ART -->
+      <div>
+        <input name="display" type="radio" id="art" />
+        <section class="art">
+          <h1><i class="fa-solid fa-palette"></i>Art</h1>
+          <div class="flex-table">
+            <table></table>
+          </div>
+        </section>
+      </div>
+      <!-- ////// -->
     </div>
-    <!-- 🍿 MOVIES -->
-    <div>
-      <input name="display" type="radio" id="movies">
-      <section class="movies">
-        <h1><i class="fa-solid fa-film"></i>Films</h1>
-        <div class="flex-table">
-          <table>
-           
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 📺 SERIES -->
-    <div>
-      <input name="display" type="radio" id="series">
-      <section class="series">
-        <h1><i class="fa-solid fa-tv"></i>Shows</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🎭 PLAYS -->
-    <div>
-      <input name="display" type="radio" id="plays">
-      <section class="plays">
-        <h1><i class="fa-solid fa-masks-theater"></i>Plays</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🎨 ANIMATION -->
-    <div>
-      <input name="display" type="radio" id="animation">
-      <section class="animation">
-        <h1><i class="fa-solid fa-paintbrush"></i>Animation</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🍡 ANIME -->
-    <div>
-      <input name="display" type="radio" id="anime">
-      <section class="anime">
-        <h1><i class="fa-solid fa-dragon"></i>Anime</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 📘 FICTION -->
-    <div>
-      <input name="display" type="radio" id="fiction">
-      <section class="fiction">
-        <h1><i class="fa-solid fa-book"></i>Fiction</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 📚 NON-FICTION -->
-    <div>
-      <input name="display" type="radio" id="non-fiction">
-      <section class="non-fiction">
-        <h1><i class="fa-solid fa-book-open"></i>Non-Fiction</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 📝 POETRY -->
-    <div>
-      <input name="display" type="radio" id="poetry">
-      <section class="poetry">
-        <h1><i class="fa-solid fa-quote-right"></i>Poetry</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 💥 COMIC BOOKS -->
-    <div>
-      <input name="display" type="radio" id="comic_books">
-      <section class="comic_books">
-        <h1><i class="fa-solid fa-comment-dots"></i>Comic Books</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🥷🏻 MANGA -->
-    <div>
-      <input name="display" type="radio" id="manga">
-      <section class="manga">
-        <h1><i class="fa-solid fa-user-ninja"></i>Manga</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🎮 VIDEO GAMES -->
-    <div>
-      <input name="display" type="radio" id="video_games">
-      <section class="video_games">
-        <h1><i class="fa-solid fa-gamepad"></i>Video Games</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- 🎸 MUSIC -->
-    <div>
-      <input name="display" type="radio" id="music">
-      <section class="music">
-        <h1><i class="fa-solid fa-guitar"></i>Music</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- ART -->
-    <div>
-      <input name="display" type="radio" id="art">
-      <section class="art">
-        <h1><i class="fa-solid fa-palette"></i>Art</h1>
-        <div class="flex-table">
-          <table>
-    
-          </table>
-        </div>
-      </section>
-    </div>
-    <!-- ////// -->
-  </div>
-</body>
+  </body>
 </html>

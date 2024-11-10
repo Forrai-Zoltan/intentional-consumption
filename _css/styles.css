@@ -166,6 +166,7 @@ section {
   thead {
     font-weight: bold;
     border-bottom: 5px solid black;
+    padd
   }
 
   tbody tr:nth-last-of-type(2n) {
