@@ -94,11 +94,11 @@ input[type="radio"] {
   display: none;
 }
 
-label:hover {
+nav label:hover {
   background-color: rgb(19, 19, 19);
 }
 
-span:hover {
+nav span:hover {
   background-color: green;
 }
 
@@ -294,6 +294,22 @@ p {
 }
 /* //////////////////// */
 
+.fa {
+  color: rgb(50, 50, 50);
+  user-select: none;
+}
+
 .checked {
   color: orange;
+}
+
+td:has(.fa) {
+  text-align: center;
+}
+
+td[data-cell="Year"] {
+  font-family: Courier, monospace;
+}
+td[data-cell="Title"] {
+  font-weight: bold;
 }

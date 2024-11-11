@@ -58,7 +58,7 @@
     <!-- ⚙️ DASHBOARD -->
     <div class="body">
       <div>
-        <input name="display" type="radio" id="dashboard" />
+        <input name="display" type="radio" id="dashboard" checked />
         <section class="dashboard">
           <div class="columns">
             <div class="flex-1">
@@ -140,7 +140,7 @@
       </div>
       <!-- 🍿 MOVIES -->
       <div>
-        <input name="display" type="radio" id="movies" checked />
+        <input name="display" type="radio" id="movies" />
         <section class="movies">
           <h1><i class="fa-solid fa-film"></i>Films</h1>
           <div class="flex-table">
@@ -153,6 +153,7 @@
                   <th>Year</th>
                   <th>🍿 FILMS</th>
                   <th>Rating</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
@@ -161,16 +162,19 @@
                   <td data-cell="✓">
                     <input checked type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Script"></td>
+                  <td data-cell="Script">
+                    <input type="checkbox" class="uncheckable" />
+                  </td>
                   <td data-cell="Year">2005</td>
                   <td data-cell="Title">V for Vendetta</td>
                   <td data-cell="Rating">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                   </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
                 <!-- template -->
@@ -178,10 +182,19 @@
                   <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Script"></td>
+                  <td data-cell="Script">
+                    <input type="checkbox" class="uncheckable" />
+                  </td>
                   <td data-cell="Year"></td>
                   <td data-cell="Title"></td>
-                  <td data-cell="Rating"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -198,20 +211,32 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
+                  <th>%</th>
                   <th>Year</th>
+                  <th>📺 SERIES</th>
+                  <th>Rating</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
+                  <td data-cell="%"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -228,20 +253,34 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
+                  <th>Script</th>
+                  <th>Author</th>
                   <th>Year</th>
+                  <th>🎭 PLAYS</th>
+                  <th>Rating</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
+                  <td data-cell="Script"></td>
+                  <td data-cell="Author"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -258,20 +297,32 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
+                  <th>Script</th>
                   <th>Year</th>
+                  <th>🎨 ANIMATION</th>
+                  <th>Rating</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
+                  <td data-cell="Script"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -288,20 +339,30 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
                   <th>Year</th>
+                  <th>🍥 ANIMES</th>
+                  <th>Rating</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -318,20 +379,38 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
+                  <th>Author</th>
                   <th>Year</th>
+                  <th>📘 FICTION</th>
+                  <th>Lang</th>
+                  <th>Trans</th>
+                  <th>Rating</th>
+                  <th>Length</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
+                  <td data-cell="Author"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Lang"></td>
+                  <td data-cell="Trans"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Length"></td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
@@ -348,20 +427,34 @@
             <table>
               <thead>
                 <tr>
-                  <th>Seen</th>
-                  <th>Title</th>
+                  <th>✓</th>
+                  <th>Author</th>
                   <th>Year</th>
+                  <th>📚 NON-FICTION</th>
+                  <th>Rating</th>
+                  <th>Genre</th>
+                  <th>Related</th>
                   <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- template -->
                 <tr>
-                  <td data-cell="Seen">
+                  <td data-cell="✓">
                     <input type="checkbox" class="uncheckable" />
                   </td>
-                  <td data-cell="Title"></td>
+                  <td data-cell="Author"></td>
                   <td data-cell="Year"></td>
+                  <td data-cell="Title"></td>
+                  <td data-cell="Rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </td>
+                  <td data-cell="Genre"></td>
+                  <td data-cell="Related"></td>
                   <td data-cell="Note"></td>
                 </tr>
               </tbody>
