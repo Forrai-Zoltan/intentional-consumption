@@ -265,7 +265,7 @@ p {
 
   tbody {
     td + td {
-      border-left: 2px solid rgb(194, 194, 194);
+      border-left: 2px solid rgba(194, 194, 194, 0.5);
     }
   }
 
@@ -276,6 +276,7 @@ p {
     padding-bottom: 5px;
     padding-top: 0px;
     vertical-align: bottom;
+    text-wrap: nowrap;
   }
 
   td {
@@ -291,6 +292,10 @@ p {
 
   tr:has(input[type="checkbox"]:checked) {
     background-color: green;
+
+    td {
+      border-bottom: 2px solid rgba(194, 194, 194, 0.5);
+    }
   }
 }
 /* //////////////////// */
@@ -313,4 +318,12 @@ td[data-cell="Year"] {
 }
 td[data-cell="Title"] {
   font-weight: bold;
+}
+
+div#container
+  > section:nth-child(2):not(.excluded)
+  > article[title^="Complex"]:has(h1::after)
+  ~ ul
+  li:first-child:hover[aria-checked="true"]:not([disabled])::before {
+  display: unset;
 }
