@@ -243,6 +243,7 @@ p {
 */
 
 .flex-table {
+  overflow: auto;
   table {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -252,12 +253,8 @@ p {
     width: 100%;
     background-color: rgb(160, 160, 160);
     overflow: hidden;
-    display: block-inline;
   }
-  table th {
-    position: sticky;
-    top: 0;
-  }
+
   tr:nth-child(even) {
     background-color: rgb(140, 140, 140);
   }
@@ -273,8 +270,12 @@ p {
   }
 
   th {
-    font-size: 40px;
+    font-size: 35px;
     background-color: orange;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    vertical-align: bottom;
   }
 
   td {
