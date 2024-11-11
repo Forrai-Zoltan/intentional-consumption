@@ -56,7 +56,7 @@ nav::-webkit-scrollbar {
   display: none;
 }
 
-span,
+nav span,
 label {
   margin: 1px;
   border-bottom: none;
@@ -73,7 +73,7 @@ label {
   user-select: none;
 }
 
-span {
+nav span {
   background-color: midnightblue;
   max-width: fit-content;
 }
@@ -293,3 +293,7 @@ p {
   }
 }
 /* //////////////////// */
+
+.checked {
+  color: orange;
+}
