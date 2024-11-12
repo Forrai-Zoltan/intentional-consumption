@@ -271,7 +271,7 @@ p {
 
   th {
     font-size: 35px;
-    background-color: orange;
+    background-color: rgb(255, 140, 0);
     padding: 10px;
     padding-bottom: 5px;
     padding-top: 0px;
@@ -318,12 +318,4 @@ td[data-cell="Year"] {
 }
 td[data-cell="Title"] {
   font-weight: bold;
-}
-
-div#container
-  > section:nth-child(2):not(.excluded)
-  > article[title^="Complex"]:has(h1::after)
-  ~ ul
-  li:first-child:hover[aria-checked="true"]:not([disabled])::before {
-  display: unset;
 }
